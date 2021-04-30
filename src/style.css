@@ -1,6 +1,4 @@
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
+.js-loading *, .js-loading *:before, .js-loading *:after {
   animation-play-state: paused !important;
 }
 
@@ -17,56 +15,56 @@ body {
 @font-face {
   font-family: 'Discord';
   src:  url('./src/Discord.woff2')
-        format('woff2');
+    format('woff2');
 }
 
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-      opacity: 0%;
+    transform: translateX(-100px);
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 100%;
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-      opacity: 0%;
+    transform: translateX(-100px);
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 100%;
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
-      transform: translateX(100px);
-      opacity: 0%;
+    transform: translateX(100px);
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 100%;
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
-      transform: translateX(100px);
-      opacity: 0%;
+    transform: translateX(100px);
+    opacity: 0%;
   }
   100% {
     -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 100%;
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
@@ -94,7 +92,7 @@ section#Second {
 
 h1#RinaText {
   color: #fff;
-  font-family: "Discord";
+  font-family: "Discord", sans-serif;
   font-size: 50px;
   padding-left: 10px;
 }
@@ -106,7 +104,7 @@ img#Kumiai {
 
 img#Rina {
   -webkit-animation: slide-right 0.5s ease-in-out alternate both;
-    animation: slide-right 0.5s ease-in-out alternate both;
+  animation: slide-right 0.5s ease-in-out alternate both;
   height: 100%;
   max-height: 600px;
   margin-right: auto;
@@ -114,7 +112,7 @@ img#Rina {
 
 div#BrandPos {
   -webkit-animation: slide-left 0.5s ease-in-out alternate both;
-    animation: slide-left 0.5s ease-in-out alternate both;
+  animation: slide-left 0.5s ease-in-out alternate both;
   display: flex;
   align-items: center;
   justify-content: center;
