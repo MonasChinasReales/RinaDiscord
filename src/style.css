@@ -25,6 +25,7 @@ body {
     transform: translateX(-100px);
     opacity: 0%;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
