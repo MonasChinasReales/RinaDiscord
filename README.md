@@ -28,8 +28,6 @@ Simple and Light App to active Rina Discord Rich Presence - Build on Electron
 
 - `8` Way to avoid the "SmartScreen" encountered, is to make use unzipped as rar. If `SmartScreen` still appears, let me know.
 
-
-
 ### [`📥 Download Link for Windows`](https://cdn.discordapp.com/attachments/805397248288358420/837494530327445514/RinaInstaller.rar)
 > Warning: SmartScreen will appears because the app dont have ***code signing certificate***
 
