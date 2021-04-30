@@ -18,6 +18,7 @@ body {
   font-family: 'Discord';
   src: url('./src/Discord.woff2') format('woff2');
 }
+
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
@@ -30,6 +31,7 @@ body {
     opacity: 100%;
   }
 }
+
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
@@ -42,6 +44,7 @@ body {
     opacity: 100%;
   }
 }
+
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
@@ -54,6 +57,7 @@ body {
     opacity: 100%;
   }
 }
+
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
@@ -173,19 +177,19 @@ button#monasAbout {
 
 button#close {
 	box-shadow: 0 0 10px 0 #ffae00;
-	  background-color: #000;
-	  border-radius: 28px;
-	  border: 1px solid #ffae00;
-	  display: inline-block;
-	  cursor: pointer;
-	  color: #ffae00;
-	  font-family: Arial, Helvetica, sans-serif;
-	  font-size: 17px;
-	  padding: 8px 16px;
+	background-color: #000;
+  border-radius: 28px;
+  border: 1px solid #ffae00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffae00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding: 8px 16px;
 }
 
 button#close:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 
