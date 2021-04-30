@@ -1,5 +1,2 @@
-particlesJS.load('particles-js', './src/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-
-  
+/*global particlesJS, Particle JavaScript*/
+particlesJS.load("particles-js", "./src/particles.json")
