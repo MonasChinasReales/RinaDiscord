@@ -1,0 +1,193 @@
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+body{
+  background: #000;
+  border-radius: 5%;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Discord';
+  src: url('./src/Discord.woff2') format('woff2') 
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 100%;
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 100%;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+            opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 100%;
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+            opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 100%;
+  }
+}
+
+div#particles-js{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+section#Frist{
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section#Second{
+  display: flex;
+  flex: 50%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h1#RinaText{
+  color: #fff;
+  font-family: "Discord";
+  font-size: 50px;
+  padding-left: 10px;
+}
+
+img#Kumiai{
+  height: 75%;
+  max-height: 200px;
+}
+
+img#Rina{
+  -webkit-animation: slide-right 0.5s ease-in-out alternate both;
+          animation: slide-right 0.5s ease-in-out alternate both;
+  height: 100%;
+  max-height: 600px;
+  margin-right: auto;
+}
+
+div#BrandPos{
+  -webkit-animation: slide-left 0.5s ease-in-out alternate both;
+          animation: slide-left 0.5s ease-in-out alternate both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+div#LogoBrand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+div#RinaDiscord{
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+  text-align: start;
+}
+
+div#RinaText{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+h2{
+  font-size: 2vh;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  align-content: center;
+  color: rgba(255, 255, 255, 0.377);
+  margin-bottom: 0;
+}
+
+button:focus{
+  outline: none;
+}
+
+button#monasAbout{
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0;
+  font-size: 1.5vh;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: underline;
+  align-content: center;
+  background: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+}
+
+Button#close{
+	box-shadow: 0px 0px 10px 0px #ffae00;
+	background-color:#000000;
+	border-radius:28px;
+	border:1px solid #ffae00;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffae00;
+	font-family:Arial;
+	font-size:17px;
+	padding:8px 16px;
+}
+Button#close:hover{
+	background-color:#ffffff;
+}
+
+
+
