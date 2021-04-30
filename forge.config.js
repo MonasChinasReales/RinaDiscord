@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
     "packagerConfig": {
@@ -20,8 +20,8 @@ module.exports = {
                 "copyright": "Monitas Chinas Reales Inc",
                 "description": "An app to make Rina be part of your Discord Life",
                 "setupIcon": `${path.join(__dirname, "/src/img/icon.ico")}`,
-                'skipUpdateIcon': true
+                "skipUpdateIcon": true
             }
-            }
+        }
     ]
-}
+};
