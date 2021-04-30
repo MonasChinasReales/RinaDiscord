@@ -1,8 +1,8 @@
-const { app, BrowserWindow, Menu, Tray } = require('electron');
-const path = require('path');
+const { app, BrowserWindow, Menu, Tray } = require("electron");
+const path = require("path");
 
 var rpc = require("discord-rpc");
-const client = new rpc.Client({ transport: 'ipc' });
+const client = new rpc.Client({ transport: "ipc" });
 client.on("ready", () => {
   client.request("SET_ACTIVITY", {
         "pid": process.pid,
@@ -63,7 +63,7 @@ const createWindow = () => {
 
 };
 
-let tray = null
+let tray = null;
 app.whenReady().then(() => {
   
     tray = new Tray(
@@ -78,10 +78,10 @@ app.whenReady().then(() => {
         click: () => { app.quit() }
       }
     ]);
-    tray.setToolTip('Rina-Chan.');
+    tray.setToolTip("Rina-Chan.");
     tray.setContextMenu(contextMenu);
-    tray.on("click", () => { createWindow(); } )
-    
+    tray.on("click", () => { createWindow(); } );
+
   }
 );
 
@@ -89,7 +89,7 @@ app.on("ready", createWindow);
 
 app.on("window-all-closed", () => {
   mainWindow = null;
-})
+});
 
 
 
