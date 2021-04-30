@@ -1,6 +1,6 @@
 .js-loading *,
-.js-loading *:before,
-.js-loading *:after {
+.js-loading *::before,
+.js-loading *::after {
   animation-play-state: paused !important;
 }
 
@@ -16,10 +16,8 @@ body {
 
 @font-face {
   font-family: 'Discord';
-  src:  url('./src/Discord.woff2')
-    format('woff2');
+  src:  url('./src/Discord.woff2')format('woff2');
 }
-
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
@@ -44,7 +42,6 @@ body {
     opacity: 100%;
   }
 }
-
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
@@ -175,8 +172,8 @@ button#monasAbout {
 }
 
 button#close {
-	box-shadow: 0px 0px 10px 0px #ffae00;
-	background-color: #000000;
+	box-shadow: 0 0 10px 0 #ffae00;
+	background-color: #000;
 	border-radius: 28px;
 	border: 1px solid #ffae00;
 	display: inline-block;
