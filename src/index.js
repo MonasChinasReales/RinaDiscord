@@ -75,7 +75,7 @@ app.whenReady().then(() => {
     
       { label: "Exit", 
         type: "normal",
-        click: () => { app.quit() }
+        click: () => { app.quit(); }
       }
     ]);
     tray.setToolTip("Rina-Chan.");
