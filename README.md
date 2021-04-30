@@ -5,26 +5,20 @@ Simple and Light App to active Rina Discord Rich Presence - Build on Electron
 
 ## **Changes List**
 
-- `1` Installer with loading screen.
 
+- `1` Installer with loading screen.
 
 - `2` New screen design, with rina.
 
-
 - `3` New open animation.
-
 
 - `4` Improved pre-loading, now it looks more native.
 
-
 - `5` Fixed activating the developer mode with `CTRL + SHIT + I`
-
 
 - `6` Fixed F12, which activated fullscreen.
 
-
 - `7` Added a **README.txt** with information.
-
 
 - `8` Way to avoid the "SmartScreen" encountered, is to make use unzipped as rar. If `SmartScreen` still appears, let me know.
 
