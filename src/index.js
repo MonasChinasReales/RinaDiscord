@@ -2,6 +2,7 @@ const { app, BrowserWindow, Menu, Tray } = require("electron");
 const path = require("path");
 
 var rpc = require("discord-rpc");
+const { error } = require("console");
 const client = new rpc.Client({ transport: "ipc" });
 client.on("ready", () => {
   client.request("SET_ACTIVITY", {
@@ -22,6 +23,7 @@ client.on("ready", () => {
     }
   );
 });
+client.login({ clientId : "836320963346825326" }).catch(error => error = undefined);
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) { // eslint-disable-line global-require
   app.quit();
