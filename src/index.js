@@ -23,7 +23,7 @@ client.on("ready", () => {
     }
   );
 });
-client.login({ clientId : "836320963346825326" }).catch(error => error = undefined);
+client.login({ clientId : "836320963346825326" }).catch();
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) { // eslint-disable-line global-require
   app.quit();
