@@ -8,9 +8,7 @@ Simple and Light App to active Rina Discord Rich Presence - Build on Electron
 
 ## **Changes List**
 
--   `1` Code Quality **A**
--   `2` Better Performance 
--   `3` Windows Administrator Fixed
+-   `1` Login Fix
 
 ### [`📥 Download Link for Windows`](https://cdn.discordapp.com/attachments/836521448826863636/837852511162859550/Rina_Discord.rar)
 > Warning: SmartScreen will appears because the app dont have ***code signing certificate***
