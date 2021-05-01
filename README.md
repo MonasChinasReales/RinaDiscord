@@ -1,20 +1,18 @@
 ![Preview](https://github.com/MonasChinasReales/RinaDiscord/blob/main/src/img/Preview.PNG?raw=true)
 
 # RinaDiscord
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/85893d824b6b4cf6b63ff2879b86bba1)](https://app.codacy.com/gh/MonasChinasReales/RinaDiscord?utm_source=github.com&utm_medium=referral&utm_content=MonasChinasReales/RinaDiscord&utm_campaign=Badge_Grade_Settings) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
 Simple and Light App to active Rina Discord Rich Presence - Build on Electron
 
 ## **Changes List**
 
--   `1` Installer with loading screen.
--   `2` New screen design, with rina.
--   `3` New open animation.
--   `4` Improved pre-loading, now it looks more native.
--   `5` Fixed activating the developer mode with `CTRL + SHIT + I`
--   `6` Fixed F12, which activated fullscreen.
--   `7` Added a **README.txt** with information.
--   `8` Way to avoid the "SmartScreen" encountered, is to make use unzipped as rar. If `SmartScreen` still appears, let me know.
+-   `1` Code Quality **A**
+-   `2` Better Performance 
+-   `3` Windows Administrator Fixed
 
-### [`📥 Download Link for Windows`](https://cdn.discordapp.com/attachments/805397248288358420/837494530327445514/RinaInstaller.rar)
+### [`📥 Download Link for Windows`](https://cdn.discordapp.com/attachments/836521448826863636/837852511162859550/Rina_Discord.rar)
 > Warning: SmartScreen will appears because the app dont have ***code signing certificate***
 
 #### About Pull request
