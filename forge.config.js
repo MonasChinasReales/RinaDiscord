@@ -18,7 +18,7 @@ module.exports = {
                 "loadingGif": "./src/img/Installer.gif",
                 "authors": "Monitas Chinas Reales Inc",
                 "copyright": "Monitas Chinas Reales Inc",
-                "description": "An app to make Rina be part of your Discord Life",
+                "description": "Rina is ON!",
                 "setupIcon": `${path.join(__dirname, "/src/img/icon.ico")}`,
                 "skipUpdateIcon": true
             }
