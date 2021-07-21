@@ -1,7 +1,4 @@
-const { app, Menu, Tray } = require("electron");
-
-const {BrowserWindow, setVibrancy} = require("electron-acrylic-window");
-
+const { app, BrowserWindow, Menu, Tray } = require("electron");
 const path = require("path");
 
 var rpc = require("discord-rpc");
@@ -48,14 +45,8 @@ const createWindow = () => {
     icon: "./icons/icon.ico",
     titleBarStyle: "hidden",
     frame: false,
+    backgroundColor: "#000",
     fullscreenable: false,
-
-    
-    vibrancy: { 
-      theme: "#00000095",
-      disableOnBlur: false
-    },
-
     webPreferences: {
       contextIsolation: false,
       disableHtmlFullscreenWindowResize: false,
@@ -100,7 +91,3 @@ app.on("ready", createWindow);
 app.on("window-all-closed", () => {
   mainWindow = null;
 });
-
-
-
-
