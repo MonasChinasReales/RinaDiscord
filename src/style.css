@@ -190,6 +190,4 @@ button#close {
   padding: 8px 16px;
 }
 
-button#close:hover {
-  background-color: #fff;
-}
+button#close:hover { background-color: #fff; }
