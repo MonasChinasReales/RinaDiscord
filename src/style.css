@@ -5,8 +5,6 @@
 }
 
 body {
-  background: #000;
-  border-radius: 5%;
   width: 100vw;
   height: 100vh;
   padding: 0;
@@ -181,7 +179,7 @@ button#monasAbout {
 
 button#close {
   box-shadow: 0 0 10px 0 #ffae00;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 28px;
   border: 1px solid #ffae00;
   display: inline-block;
