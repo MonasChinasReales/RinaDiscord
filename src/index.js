@@ -87,7 +87,7 @@ app.whenReady().then(() => {
   }
 );
 
-app.on("ready", () => createWindow() );
+app.on("ready", createWindow);
 
 app.on("window-all-closed", () => {
   mainWindow = null;
