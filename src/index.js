@@ -1,4 +1,6 @@
 const { app, BrowserWindow, Menu, Tray } = require("electron");
+if (require("electron-squirrel-startup")) return; 
+
 const path = require("path");
 
 var rpc = require("discord-rpc");
@@ -24,9 +26,6 @@ client.on("ready", () => {
 });
 client.login({ clientId : "836320963346825326" }).catch( (error) => { error = null; } );
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require("electron-squirrel-startup")) { // eslint-disable-line global-require
-  app.quit();
-}
 
 var mainWindow;
 const createWindow = () => {
@@ -53,7 +52,7 @@ const createWindow = () => {
       nodeIntegration: true,
       nodeIntegrationInWorker: true,
       enableRemoteModule: true,
-      devTools: false,
+      devTools: true,
     }
   });
 
@@ -71,22 +70,26 @@ app.whenReady().then(() => {
       require("path").resolve(__dirname, "icons/icon.ico")
     );
 
-    
-    const contextMenu = Menu.buildFromTemplate([
-    
-      { label: "Exit", 
-        type: "normal",
-        click: () => { app.quit(); }
-      }
-    ]);
+    const contextMenu = Menu.buildFromTemplate(
+      [
+        { 
+          label: "Exit", 
+          type: "normal",
+          click: () => { app.quit(); }
+        }
+      ]
+    );
+
     tray.setToolTip("Rina-Chan.");
-    tray.setContextMenu(contextMenu);
     tray.on("click", () => { createWindow(); } );
+    tray.on("right-click", () => { tray.popUpContextMenu([contextMenu]) })
+    tray.setContextMenu(contextMenu);
+
 
   }
 );
 
-app.on("ready", createWindow);
+app.on("ready", () => { createWindow(), console.log(tray) } );
 
 app.on("window-all-closed", () => {
   mainWindow = null;

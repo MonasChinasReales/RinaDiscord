@@ -8,7 +8,7 @@ module.exports = {
         "executableName": "RinaDiscord!",
         "win32metadata": {
         "OriginalFilename": "Rina Discord",
-        "FileDescription": "An app to make Rina be part of your Discord Life"
+        "FileDescription": "Rina is ON!",
         }
         },
         "makers": [
