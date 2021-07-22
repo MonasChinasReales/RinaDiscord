@@ -25,7 +25,6 @@ client.on("ready", () => {
   );
 });
 client.login({ clientId : "836320963346825326" }).catch( (error) => { error = null; } );
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
 
 var mainWindow;
 const createWindow = () => {
@@ -52,7 +51,7 @@ const createWindow = () => {
       nodeIntegration: true,
       nodeIntegrationInWorker: true,
       enableRemoteModule: true,
-      devTools: true,
+      devTools: false,
     }
   });
 
@@ -82,14 +81,13 @@ app.whenReady().then(() => {
 
     tray.setToolTip("Rina-Chan.");
     tray.on("click", () => { createWindow(); } );
-    tray.on("right-click", () => { tray.popUpContextMenu([contextMenu]) })
+    tray.on("right-click", () => { tray.popUpContextMenu([contextMenu]); })
     tray.setContextMenu(contextMenu);
-
 
   }
 );
 
-app.on("ready", () => { createWindow(), console.log(tray) } );
+app.on("ready", () => createWindow() );
 
 app.on("window-all-closed", () => {
   mainWindow = null;
