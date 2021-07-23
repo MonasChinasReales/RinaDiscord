@@ -1,4 +1,7 @@
-const { app, BrowserWindow, Menu, Tray } = require("electron");
+const { app, Menu, Tray } = require("electron");
+if (require("electron-squirrel-startup")) return; 
+const {BrowserWindow} = require("electron-acrylic-window");
+
 const path = require("path");
 
 var rpc = require("discord-rpc");
@@ -23,10 +26,6 @@ client.on("ready", () => {
   );
 });
 client.login({ clientId : "836320963346825326" }).catch( (error) => { error = null; } );
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require("electron-squirrel-startup")) { // eslint-disable-line global-require
-  app.quit();
-}
 
 var mainWindow;
 const createWindow = () => {
@@ -45,8 +44,14 @@ const createWindow = () => {
     icon: "./icons/icon.ico",
     titleBarStyle: "hidden",
     frame: false,
-    backgroundColor: "#000",
     fullscreenable: false,
+
+//* Acrylic Windows
+    vibrancy: { 
+      theme: "#00000065",
+      disableOnBlur: false
+    },
+
     webPreferences: {
       contextIsolation: false,
       disableHtmlFullscreenWindowResize: false,
@@ -67,21 +72,24 @@ const createWindow = () => {
 let tray = null;
 app.whenReady().then(() => {
   
-    tray = new Tray(
-      require("path").resolve(__dirname, "icons/icon.ico")
-    );
+  tray = new Tray(
+    require("path").resolve(__dirname, "icons/icon.ico")
+  );
 
-    
-    const contextMenu = Menu.buildFromTemplate([
-    
-      { label: "Exit", 
+  const contextMenu = Menu.buildFromTemplate(
+    [
+      { 
+        label: "Exit", 
         type: "normal",
         click: () => { app.quit(); }
       }
-    ]);
-    tray.setToolTip("Rina-Chan.");
-    tray.setContextMenu(contextMenu);
-    tray.on("click", () => { createWindow(); } );
+    ]
+  );
+
+  tray.setToolTip("Rina-Chan.");
+  tray.on("click", () => { createWindow(); } );
+  tray.on("right-click", () => { tray.popUpContextMenu([contextMenu]); })
+  tray.setContextMenu(contextMenu);
 
   }
 );

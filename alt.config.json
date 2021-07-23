@@ -1,0 +1,10 @@
+{
+    "name": "rinadiscord",
+    "productName": "Rina Discord Acrilyc!",
+    "exe": "RinaDiscord!.exe",
+    "description": "Rina is ON!",
+    "copyright": "Monitas Chinas Reales Inc",
+    "authors": ["Monitas Chinas Reales Inc"],
+    "animation": "E:/Monas/Escritorio/Monas/Proyectos Codigo/RinaDiscord/src/img/Installer.gif",
+    "icon": "E:/Monas/Escritorio/Monas/Proyectos Codigo/RinaDiscord/src/img/icon.ico"
+}
