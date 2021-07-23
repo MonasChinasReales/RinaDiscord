@@ -10,7 +10,7 @@
 
 <div align="center">
 <a>[ </a>
-<a href="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/RinaDiscord%20Normal.jpg">Normal Only Preview</a> <a> / </a> <a href="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/RinaDiscord%20Acylic.jpg">Normal Only Preview</a>
+<a href="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/RinaDiscord%20Normal.jpg">Normal Only Preview</a> <a> / </a> <a href="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/RinaDiscord%20Acylic.jpg">Acrylic Only Preview</a>
 <a> ]</a>
 <a></a>
 </div>
