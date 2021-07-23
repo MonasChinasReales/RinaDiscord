@@ -1,7 +1,7 @@
 {
   "name": "rinadiscord",
   "productName": "RinaDiscord!",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "An app to make Rina be part of your Discord Life",
   "main": "src/index.js",
   "scripts": {
