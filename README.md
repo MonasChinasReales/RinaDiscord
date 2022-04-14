@@ -24,7 +24,7 @@
 |:-----------:|
 
 #### [Normal Version](https://www.monaschinasreales.xyz/assets/PublicFiles/Rina-Discord.rar) - [Acrylic Version](https://www.monaschinasreales.xyz/assets/PublicFiles/Rina-Discord-Acrylic.rar)
-<a href="https://www.monaschinasreales.xyz/assets/PublicFiles/Rina-Discord.rar"><img src="https://github.com/MonasChinasReales/RinaDiscord/blob/main/src/previews/Normal.png" width="45%"></a>   <a href="https://www.monaschinasreales.xyz/assets/PublicFiles/Rina-Discord-Acrylic.rar"><img src="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/Acrylic.png" width="45%"></a>
+<a href="https://monaschinasreales.xyz/rina-discord/"><img src="https://github.com/MonasChinasReales/RinaDiscord/blob/main/src/previews/Normal.png" width="45%"></a>   <a href="https://monaschinasreales.xyz/rina-discord-acrylic/"><img src="https://raw.githubusercontent.com/MonasChinasReales/RinaDiscord/main/src/previews/Acrylic.png" width="45%"></a>
 
 ## 📝 **Changes List**
 `1` Installer CPU High use and don't close [FIXED]
